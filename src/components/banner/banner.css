@@ -1,0 +1,62 @@
+.banner {
+  object-fit: contain;
+  max-height: 318px;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  object-fit: cover;
+  object-position: center center;
+  overflow: hidden !important;
+  max-height: 318px !important;
+}
+
+.overflowx {
+  overflow-x: hidden !important;
+}
+
+.banner-img {
+  object-position: center top;
+  object-fit: contain;
+  width: 100%;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 55px !important;
+  cursor: pointer;
+}
+
+.image-gallery-right-nav,
+.image-gallery-left-nav {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.image-gallery-right-nav:hover {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgb(37 37 37 / 32%),
+    #1111118c
+  );
+}
+
+.image-gallery-left-nav:hover {
+  background-image: linear-gradient(
+    -90deg,
+    transparent,
+    rgb(37 37 37 / 32%),
+    #1111118c
+  );
+}
+
+.image-gallery-bullets .image-gallery-bullet {
+  background-color: hsla(0, 0%, 100%, 0.3) !important;
+  border-color: hsla(0, 0%, 100%, 0.3) !important;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 40%) !important;
+}
+
+.image-gallery-bullets .image-gallery-bullet.active {
+  background-color: #fff !important;
+  border-color: #fff !important;
+}

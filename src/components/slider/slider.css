@@ -1,0 +1,62 @@
+.slider {
+  padding: 0px 0px 24px 0px;
+  margin-left: 20px;
+}
+
+.slider-head {
+  color: #fff;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 19px;
+  padding: 0 0 0 18px;
+  margin-bottom: 0 !important;
+}
+
+.posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 18px;
+}
+
+.posters::-webkit-scrollbar {
+  display: none;
+}
+
+.posters::-moz-scrollbar {
+  display: none !important;
+}
+
+.poster {
+  /* position: relative; */
+  object-fit: contain;
+  max-height: 163px;
+  width: 290px;
+  padding-right: 8px;
+  transition: transform 450ms;
+}
+
+.poster:hover {
+  transform: scale(1.08);
+  z-index: 9;
+}
+
+.next-btn {
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  padding: 0px 20px;
+  height: 163px;
+  transition: background-image 450ms;
+}
+
+.next-btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgb(37 37 37 / 32%),
+    #1111118c
+  );
+}
